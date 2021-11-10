@@ -3,22 +3,47 @@
   <head>
     <meta charset="utf-8">
     <title>Hello | My Site</title>
+    <style media="screen">
+
+      h1 {
+        font-size:48px;
+        color: red;
+      }
+
+      p {
+        font-family: monospace;
+        color: '#ccc';
+      }
+
+      div#my-divider {
+        border: 2px solid #000;
+        height: 300px;
+        width: 300px;
+      }
+
+      ol { list-style:none; }
+
+      li.horizontal { display: inline; }
+
+      .bottom { color:red; }
+
+    </style>
   </head>
   <body>
-    <h1 style="font-size:48px; color: red;">Hello World</h1>
+    <h1>Hello World</h1>
 
-    <p style="font-family: monospace; color: '#ccc';">Welcome to my site.</p>
+    <p>Welcome to my site.</p>
 
-    <div style="border: 2px solid #000;">
-      <p style="font-family: monospace; color: '#ccc';">Some paragraph text here!</p>
+    <div id="my-divider">
+      <p>Some paragraph text here!</p>
 
-      <ol style="list-style:none;">
-        <li style="display: inline;">One</li>
-        <li style="display: inline;">Two</li>
-        <li style="display: inline;">Three</li>
+      <ol>
+        <li class="horizontal">One</li>
+        <li class="horizontal">Two</li>
+        <li class="horizontal">Three</li>
       </ol>
 
-      <p style="font-family: monospace; color: 'red';">Some more text at the bottom.</p>
+      <p class="bottom">Some more text</p>
     </div>
   </body>
 </html>
